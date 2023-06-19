@@ -5,7 +5,10 @@ public class Fork {
 
     public Fork(int id) {
         this.id = id;
+        this.ready = true;
     }
+
+    public volatile boolean ready;
 
     @Override
     public String toString() {
